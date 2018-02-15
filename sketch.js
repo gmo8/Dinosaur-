@@ -9,7 +9,7 @@ let star3;
 function setup(){
     createCanvas(900,950);
     
-    frameRate(10);
+    frameRate(10 );
     star1 = new Star(100,100,1);
     star2 = new Star(200,400,5);
     star3 = new Star(150,150,7);
@@ -34,7 +34,7 @@ function draw(){
     beginShape()
     fill(120, 132, 23);
     
-    strokeWeight(2);
+    strokeWeight(4);
     stroke(24,10,38);
     
     //head
