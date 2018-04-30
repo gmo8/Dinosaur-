@@ -6,6 +6,7 @@ let star1;
 let star2;
 let star3;
 
+
 function setup(){
     createCanvas(900,950);
     
@@ -17,6 +18,23 @@ function setup(){
 
 function draw(){
     background(21,47,96);
+
+    if(mouseX > 450){
+        noStroke();
+        fill(255);
+        textSize(37);
+        text("I'M SIGNIFICANT", 600, 400);
+    }
+    if(mouseX < 450){
+        noStroke();
+        fill(255);
+        textFont('SF Toontime BLotch');
+        textSize(30);
+        text("Screamed the dust speck", 400, 100);
+    }
+    
+    textSize(20);
+    text("Bill Watterson", 700,900);
 
    star1.display();
    star1.move();
@@ -83,7 +101,37 @@ function draw(){
     bezier(260,860,150,900,25,880,20,800);
     endShape();
 
-    line(0,907,950,907);
+    //ufo
+    fill(116, 110, 119);
+    ellipse(350,140,60,60);
+    fill(0,0,0);
+    bezier(320,135, 240,155,450,150,380,135);
+    line(330,180,335,168);
+    line(360,168,365,180);
+    fill(254, 252, 255);
+    ellipse(355,144,8);
+    ellipse(340,144,8);
+    ellipse(325,143,8);
+    ellipse(310,142,8);
+    ellipse(370,143,8);
+    ellipse(387,141,8);
+
+    fill(37, 40, 2);
+    rect(0,907,950,907);
+
+    noStroke();
+    fill(237,223,35);
+    ellipse(50,50,10,10);
+    ellipse(90,300,10,10);
+    ellipse(150,90,10,10);
+    ellipse(400,500,10,10);
+    ellipse(700,600,10,10);
+    ellipse(500,200,10,10);
+    ellipse(70,400,10,10);
+    ellipse(700,50,10,10);
+    ellipse(840,500,10,10);
+
+
 
 }
 
