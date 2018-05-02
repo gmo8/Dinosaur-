@@ -8,10 +8,11 @@ let star3;
 
 
 function setup(){
-    createCanvas(900,950);
+    createCanvas(windowWidth, windowHeight);
     
-    frameRate(10 );
-    star1 = new Star(100,100,1);
+    
+    frameRate(10);
+    star1 = new Star(100,100,3);
     star2 = new Star(200,400,5);
     star3 = new Star(150,150,7);
 }
@@ -19,22 +20,22 @@ function setup(){
 function draw(){
     background(21,47,96);
 
-    if(mouseX > 450){
+    if(mouseX < 700){
         noStroke();
         fill(255);
         textSize(37);
         text("I'M SIGNIFICANT", 600, 400);
     }
-    if(mouseX < 450){
+    if(mouseX > 700){
         noStroke();
         fill(255);
         textFont('SF Toontime BLotch');
         textSize(30);
-        text("Screamed the dust speck", 400, 100);
+        text("Screamed the dust speck", 860, 150);
     }
     
     textSize(20);
-    text("Bill Watterson", 700,900);
+    text("Bill Watterson", 1400,900);
 
    star1.display();
    star1.move();
@@ -103,21 +104,21 @@ function draw(){
 
     //ufo
     fill(116, 110, 119);
-    ellipse(350,140,60,60);
+    ellipse(1350,140,60,60);
     fill(0,0,0);
-    bezier(320,135, 240,155,450,150,380,135);
-    line(330,180,335,168);
-    line(360,168,365,180);
+    bezier(1320,135, 1240,155,1450,150,1380,135);
+    line(1330,180,1335,168);
+    line(1360,168,1365,180);
     fill(254, 252, 255);
-    ellipse(355,144,8);
-    ellipse(340,144,8);
-    ellipse(325,143,8);
-    ellipse(310,142,8);
-    ellipse(370,143,8);
-    ellipse(387,141,8);
+    ellipse(1355,144,8);
+    ellipse(1340,144,8);
+    ellipse(1325,143,8);
+    ellipse(1310,142,8);
+    ellipse(1370,143,8);
+    ellipse(1387,141,8);
 
     fill(37, 40, 2);
-    rect(0,907,950,907);
+    rect(0,907,1950,900);
 
     noStroke();
     fill(237,223,35);
@@ -129,7 +130,21 @@ function draw(){
     ellipse(500,200,10,10);
     ellipse(70,400,10,10);
     ellipse(700,50,10,10);
-    ellipse(840,500,10,10);
+    ellipse(1840,400,10,10);
+    ellipse(80,560,10,10);
+    ellipse(940,700,10,10);
+    ellipse(84020,10,10);
+    ellipse(640,500,10,10);
+    ellipse(840,20,10,10);
+    ellipse(1040,300,10,10);
+    ellipse(1000,40,10,10);
+    ellipse(940,500,10,10);
+    ellipse(1000,200,10,10);
+    ellipse(1400,410,10,10);
+    ellipse(1200,100,10,10);
+    ellipse(1600,130,10,10);
+    ellipse(1340,300,10,10);
+    ellipse(1300,600,10,10);
 
 
 
@@ -145,6 +160,9 @@ class Star{
 display(){
     fill(237,223,35);
     ellipse(this.x,this.y,10,10);
+    ellipse(this.x,this.y,10,10);
+    ellipse(this.x,this.y,10,10);
+    
     
 }
 
